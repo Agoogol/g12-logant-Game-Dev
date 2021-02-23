@@ -1,0 +1,33 @@
+<body style="background-color: #C0C0C0;">
+<h1 style="color:red;"align=center>T3A07-code-logant</h1>
+
+Making something move across the screen.
+
+<input type=button value="Move span 1 to the left" onClick="{
+  // alert(parseInt(document.getElementById('mySpan01').style.left))
+
+document.getElementById('mySpan01').style.left=
+  parseInt(document.getElementById('mySpan01').style.left) + 10
+
+}">
+
+<input type=button value="Move span 2 to span 1" onClick="{
+  // alert(parseInt(document.getElementById('mySpan02').style.left))
+
+document.getElementById('mySpan02').style.left=
+  parseInt(document.getElementById('mySpan01').style.left) + 0
+
+}">
+
+<input type=button value="Move span 3 to the right" onClick="{
+  // alert(parseInt(document.getElementById('mySpan03').style.left))
+
+document.getElementById('mySpan03').style.left=
+  parseInt(document.getElementById('mySpan03').style.left) - 10
+
+}">
+
+<br><br>
+<span id="mySpan01" style="position:absolute; left:750; top;150;">span 1</span><br>
+<span id="mySpan02" style="position:absolute; left:750; top;150;">span 2</span><br>
+<span id="mySpan03" style="position:absolute; left:750; top;150;">span 3</span><br>
