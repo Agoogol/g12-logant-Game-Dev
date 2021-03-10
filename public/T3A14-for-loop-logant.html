@@ -1,0 +1,30 @@
+<body style="background-color: #C0C0C0;">
+<h1 style="color:orange;"align=center>T3A14-for-loop-logant</h1>
+
+<b>Version 0.0.6</b><br><br>
+
+Store this input variable into x:
+<input id="myText01" type=text value=10><br><br>
+
+<input type=button value="Show X" onclick="{
+x = document.getElementById('myText01').value
+
+let myTemp='';
+for(let i=1; i<=x; i++){  
+
+    
+
+
+  if (i % 2 == 1){
+     myTemp += '<font color=blue> Odd number </font>'
+  }
+  if (i % 2 == 0){
+     myTemp += '<font color=indianred> Even Number </font>'
+  }
+  myTemp += 'Loop Number:'+ i + '<br>';
+}
+document.getElementById('mySpan01').innerHTML = myTemp
+
+}"><br><br>
+
+<span id="mySpan01">...</Span><br><br>
