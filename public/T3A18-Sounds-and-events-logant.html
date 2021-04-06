@@ -1,0 +1,25 @@
+Version 0.0.3
+<script> let mySound1 = new Audio('pluck.mp3') </script>
+
+<body style="background-color: #C0C0C0;">
+<h1 style="color:aquamarine;"align=center>T3A18-Sounds-and-events-logant</h1>
+
+<b onClick="{
+     mySound1.play()
+}"> Click on this text to hear a sound!</b> <br><br>
+
+<audio controls>
+  <source src="bell.mp3" type="audio/mpeg">
+</audio><br><br>
+
+Change the following: <input type=text value=5 onChange="{
+   alert('Value changed to: '+this.value)
+}">
+
+<ul>Other events you could use on any web page tag:
+<li><font color="blue">onClick</font>
+<li>onMouseScroll
+<li>onDblClick
+<li>onMouseOver
+<li><font color="red">onChange</font>
+<li>
