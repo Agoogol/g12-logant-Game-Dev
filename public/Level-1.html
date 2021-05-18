@@ -1,5 +1,5 @@
 <body style="background-color: #C0C0C0;">
-<h1 style="color:#cc0000;"align=center>Level 1 [Controls are WASD]</h1><br>
+<h1 style="color:#cc0000;"align=center>Level 1 [Controls are Q,W,E,A,D,Z,X,C]</h1><br>
 <style>
 body {
   background-image: url('grass.jpg');
@@ -90,6 +90,7 @@ function myCheckAll(){
       }
       if (myAlphaKey.toLowerCase() == 'd') {   // go right
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+
          document.getElementById('mySpan15').style.left = document.getElementById('mySpan06').style.left
          document.getElementById('mySpan15').style.top = document.getElementById('mySpan06').style.top
          myCheckAll()
@@ -100,6 +101,7 @@ function myCheckAll(){
       }
       if (myAlphaKey.toLowerCase() == 'a') {   // go left
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
+
          document.getElementById('mySpan14').style.left = document.getElementById('mySpan07').style.left
          document.getElementById('mySpan14').style.top = document.getElementById('mySpan07').style.top
          myCheckAll()
@@ -121,6 +123,7 @@ function myCheckAll(){
       }
       if (myAlphaKey.toLowerCase() == 'x') {   // go down
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
+
          document.getElementById('mySpan12').style.left = document.getElementById('mySpan05').style.left
          document.getElementById('mySpan12').style.top = document.getElementById('mySpan05').style.top
          myCheckAll()
