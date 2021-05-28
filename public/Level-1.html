@@ -16,8 +16,8 @@ body {
 function myMoveFunction(event){
 
    document.getElementById('myDiv01').innerHTML = 'mouse X: '+ event.clientX +', mouse Y: '+event.clientY
-   document.getElementById('mySpan16').style.left = event.clientX  + 10
-   document.getElementById('mySpan16').style.top = event.clientY 
+   document.getElementById('mySpan30').style.left = event.clientX  - 15
+   document.getElementById('mySpan30').style.top = event.clientY - 15
 
 
    myCheckAll()
@@ -46,7 +46,7 @@ function myCheckAll(){
   if(myHitOther('mySpan01', 'mySpan02')){
     document.getElementById('mySpan02').style.left = '-400px'
     alert('You Win!')
-    location = 'Level'
+    location = 'Level-2.html'
   }
 
   if(myHitOther('mySpan01', 'mySpan03')){
@@ -80,7 +80,23 @@ function myCheckAll(){
       if (myKeyUp.toLowerCase() == 'd') {   // go down
          document.getElementById('mySpan15').style.left = '-400px'
      }
+
+      if (myKeyUp.toLowerCase() == 'q') {   // go down
+         document.getElementById('mySpan16').style.left = '-400px'
+     }
       
+      if (myKeyUp.toLowerCase() == 'e') {   // go down
+         document.getElementById('mySpan17').style.left = '-400px'
+     }
+
+      if (myKeyUp.toLowerCase() == 'z') {   // go down
+         document.getElementById('mySpan18').style.left = '-400px'
+     }
+
+      if (myKeyUp.toLowerCase() == 'c') {   // go down
+         document.getElementById('mySpan19').style.left = '-400px'
+     }
+
 }" onKeyDown="{
      let myAlphaKey = event.key
      document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
@@ -131,21 +147,36 @@ function myCheckAll(){
       if (myAlphaKey.toLowerCase() == 'c') {   // go southeast
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
+
+         document.getElementById('mySpan19').style.left = document.getElementById('mySpan11').style.left
+         document.getElementById('mySpan19').style.top = document.getElementById('mySpan11').style.top
          myCheckAll()
       }
+
       if (myAlphaKey.toLowerCase() == 'z') {   // go southwest
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
+
+         document.getElementById('mySpan18').style.left = document.getElementById('mySpan10').style.left
+         document.getElementById('mySpan18').style.top = document.getElementById('mySpan10').style.top
          myCheckAll()
       }
+
       if (myAlphaKey.toLowerCase() == 'q') {   // go northwest
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
+
+         document.getElementById('mySpan16').style.left = document.getElementById('mySpan08').style.left
+         document.getElementById('mySpan16').style.top = document.getElementById('mySpan08').style.top
          myCheckAll()
       }
+
       if (myAlphaKey.toLowerCase() == 'e') {   // go northeast
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
+
+         document.getElementById('mySpan17').style.left = document.getElementById('mySpan09').style.left
+         document.getElementById('mySpan17').style.top = document.getElementById('mySpan09').style.top
          myCheckAll()
       }
 }">
@@ -174,14 +205,14 @@ function myCheckAll(){
 
 
 
-<div id="myDiv01" style="display:none;">...</div>
+<div id="myDiv01" style="display:none;">HI</div>
 
 <br<br>
-<span id="mySpan01" style="position:absolute; left:100; top;150;"><img src="TestBall.png" width="50" height="50"></span><br>
+<span id="mySpan01" style="position:absolute; left:100; top:150; width:50; height:50"><img src="TestBall.png" width="50" height="50"></span><br>
 
-<span id="mySpan02" style="position:absolute; left:1250; top:350;"><img src="TestHole.png" width="75" height="75"></span><br>
+<span id="mySpan02" style="position:absolute; left:1250; top:350; width:75; height:75"><img src="TestHole.png" width="75" height="75"></span><br>
 
-<span id="mySpan03" style="position:absolute; left:1250; top:325;"><img src="TestFlag.png" width="75" height="75"></span><br>
+<span id="mySpan03" style="position:absolute; left:1250; top:325; width:75; height:75"><img src="TestFlag.png" width="75" height="75"></span><br>
 
 <span id="mySpan04" style="position:absolute; left:83; top:460; width:45; height:30"> 
 <img src="ArrowUp.png" width="50" height="50"></span><br>
@@ -207,9 +238,6 @@ function myCheckAll(){
 <span id="mySpan11" style="position:absolute; left:150; top:600; width:45; height:30"> 
 <img src="ArrowSouthEast.png" width="50" height="50"></span><br>
 
-<span id="mySpan11" style="position:absolute; left:83; top:530; width:45; height:30"> 
-<img src="ArrowCenter.png" width="50" height="50"></span><br>
-
 <span title="down arrow" id="mySpan12" style="position:absolute; left:-100; top:100; width:45; height:30"> 
 <img src="PressArrowDown.png" width="50" height="50"></span><br>
 
@@ -222,4 +250,19 @@ function myCheckAll(){
 <span title="right arrow"  id="mySpan15" style="position:absolute; left:-100; top:100; width:45; height:30"> 
 <img src="PressArrowRight.png" width="50" height="50"></span><br>
 
-<span id="mySpan16" style="position:absolute; left:-400; top:0;"><img src="golfclub.png" width="50" height="50"></span><br>
+<span title="right arrow"  id="mySpan16" style="position:absolute; left:-100; top:100; width:45; height:30"> 
+<img src="PressArrowNorthWest.png" width="50" height="50"></span><br>
+
+<span title="right arrow"  id="mySpan17" style="position:absolute; left:-100; top:100; width:45; height:30"> 
+<img src="PressArrowNorthEast.png" width="50" height="50"></span><br>
+
+<span title="right arrow"  id="mySpan18" style="position:absolute; left:-100; top:100; width:45; height:30"> 
+<img src="PressArrowSouthWest.png" width="50" height="50"></span><br>
+
+<span title="right arrow"  id="mySpan19" style="position:absolute; left:-100; top:100; width:45; height:30"> 
+<img src="PressArrowSouthEast.png" width="50" height="50"></span><br>
+
+<span id="mySpan20" style="position:absolute; left:83; top:530; width:45; height:30"> 
+<img src="ArrowCenter.png" width="50" height="50"></span><br>
+
+<span id="mySpan30" style="position:absolute; left:-400; top:0;"><img src="golfclub.png" width="50" height="50"></span><br>
