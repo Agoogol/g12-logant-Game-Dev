@@ -54,6 +54,16 @@ function myCheckAll(){
     location = 'Level-2.html'
   }
 
+  if(myHitOther('mySpan01', 'mySpan32')){
+    document.getElementById('mySpan32').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan33')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
 }
 
 
@@ -79,7 +89,6 @@ function myCheckAll(){
       if (myKeyUp.toLowerCase() == 'd') {   // go down
          document.getElementById('mySpan15').style.left = '-400px'
      }
-
       if (myKeyUp.toLowerCase() == 'q') {   // go down
          document.getElementById('mySpan16').style.left = '-400px'
      }
@@ -87,15 +96,12 @@ function myCheckAll(){
       if (myKeyUp.toLowerCase() == 'e') {   // go down
          document.getElementById('mySpan17').style.left = '-400px'
      }
-
       if (myKeyUp.toLowerCase() == 'z') {   // go down
          document.getElementById('mySpan18').style.left = '-400px'
      }
-
       if (myKeyUp.toLowerCase() == 'c') {   // go down
          document.getElementById('mySpan19').style.left = '-400px'
      }
-
 }" onKeyDown="{
      let myAlphaKey = event.key
      document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
@@ -105,7 +111,6 @@ function myCheckAll(){
       }
       if (myAlphaKey.toLowerCase() == 'd') {   // go right
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-
          document.getElementById('mySpan15').style.left = document.getElementById('mySpan06').style.left
          document.getElementById('mySpan15').style.top = document.getElementById('mySpan06').style.top
          myCheckAll()
@@ -116,7 +121,6 @@ function myCheckAll(){
       }
       if (myAlphaKey.toLowerCase() == 'a') {   // go left
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
-
          document.getElementById('mySpan14').style.left = document.getElementById('mySpan07').style.left
          document.getElementById('mySpan14').style.top = document.getElementById('mySpan07').style.top
          myCheckAll()
@@ -138,7 +142,6 @@ function myCheckAll(){
       }
       if (myAlphaKey.toLowerCase() == 'x') {   // go down
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
-
          document.getElementById('mySpan12').style.left = document.getElementById('mySpan05').style.left
          document.getElementById('mySpan12').style.top = document.getElementById('mySpan05').style.top
          myCheckAll()
@@ -146,34 +149,27 @@ function myCheckAll(){
       if (myAlphaKey.toLowerCase() == 'c') {   // go southeast
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
-
          document.getElementById('mySpan19').style.left = document.getElementById('mySpan11').style.left
          document.getElementById('mySpan19').style.top = document.getElementById('mySpan11').style.top
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'z') {   // go southwest
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
-
          document.getElementById('mySpan18').style.left = document.getElementById('mySpan10').style.left
          document.getElementById('mySpan18').style.top = document.getElementById('mySpan10').style.top
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'q') {   // go northwest
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
-
          document.getElementById('mySpan16').style.left = document.getElementById('mySpan08').style.left
          document.getElementById('mySpan16').style.top = document.getElementById('mySpan08').style.top
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'e') {   // go northeast
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
-
          document.getElementById('mySpan17').style.left = document.getElementById('mySpan09').style.left
          document.getElementById('mySpan17').style.top = document.getElementById('mySpan09').style.top
          myCheckAll()
@@ -268,8 +264,6 @@ function myCheckAll(){
 
 <span id="mySpan31" style="position:absolute; left:0; top:100; width:250; height:10"><img src="TestBlockTop.png" width="250" height="150"></span><br>
 
-<span id="mySpan32" style="position:absolute; left:0; top:100; width:250; height:10"><img src="TestBlockRight.png" width="250" height="150"></span><br>
+<span id="mySpan32" style="position:absolute; left:226; top:100; width:13; height:50"><img src="TestBlockRight.png" width="250" height="150"></span><br>
 
-<span id="mySpan33" style="position:absolute; left:0; top:100; width:250; height:10"><img src="TestBlockBottom.png" width="250" height="150"></span><br>
-
-
+<span id="mySpan33" style="position:absolute; left:0; top:236; width:250; height:10"><img src="TestBlockBottom.png" width="250" height="150"></span><br>
