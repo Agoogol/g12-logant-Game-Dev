@@ -64,9 +64,52 @@ function myCheckAll(){
     location = 'Level-2.html'
   }
 
+  if(myHitOther('mySpan01', 'mySpan35')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan36')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan37')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan38')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan39')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan40')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
+
+  if(myHitOther('mySpan01', 'mySpan41')){
+    document.getElementById('mySpan33').style.left = '-400px'
+    location = 'Level-2.html'
+  }
 }
 
+function myXAuto(){
+  document.myRotate += 20
 
+  document.getElementById('mySpan35').style.left = parseInt(document.getElementById('mySpan35').style.left) + document.myXmove
+
+  document.getElementById('mySpan35').style.transform = 'rotate('+  document.myRotate  +'deg)'
+//transform: rotate(50deg);
+
+  myCheckAll()
+}
 
  document.body.style.cursor = 'none'
 
@@ -264,6 +307,22 @@ function myCheckAll(){
 
 <span id="mySpan31" style="position:absolute; left:0; top:100; width:250; height:10"><img src="TestBlockTop.png" width="250" height="150"></span><br>
 
-<span id="mySpan32" style="position:absolute; left:226; top:100; width:13; height:50"><img src="TestBlockRight.png" width="250" height="150"></span><br>
+<span id="mySpan32" style="position:absolute; left:226; top:100; width:13; height:100"><img src="TestBlockRight.png" width="250" height="150"></span><br>
 
 <span id="mySpan33" style="position:absolute; left:0; top:236; width:250; height:10"><img src="TestBlockBottom.png" width="250" height="150"></span><br>
+
+<span id="mySpan34" style="position:absolute; visibility:visible; left:1250; top:675; width:350; height:50"><img src="FunnyText.png" width="350" height="50"></span><br>
+
+<span id="mySpan35" style="position:absolute; left:650; top:100; width:100; height:100"><img src="TestSawBlade.png" width="100" height="100"></span><br>
+
+<span id="mySpan36" style="position:absolute; left:650; top:200; width:100; height:100"><img src="TestSawBlade.png" width="100" height="100"></span><br>
+
+<span id="mySpan37" style="position:absolute; left:650; top:300; width:100; height:100"><img src="TestSawBlade.png" width="100" height="100"></span><br>
+
+<span id="mySpan38" style="position:absolute; left:650; top:500; width:100; height:100"><img src="TestSawBlade.png" width="100" height="100"></span><br>
+
+<span id="mySpan39" style="position:absolute; left:650; top:600; width:100; height:100"><img src="TestSawBlade.png" width="100" height="100"></span><br>
+
+<span id="mySpan40" style="position:absolute; left:650; top:700; width:100; height:100"><img src="TestSawBlade.png" width="100" height="100"></span><br>
+
+<span id="mySpan41" style="position:absolute; left:650; top:-50; width:100; height:150;"><img src="TestHitbox.png" width="100" height="100"></span><br>
