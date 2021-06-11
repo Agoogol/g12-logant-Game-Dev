@@ -1,4 +1,20 @@
+<body onMouseMove="{myMoveFunction(event)}">
+
+
+
 <script>
+
+function myMoveFunction(event){
+
+   document.getElementById('myDiv01').innerHTML = 'mouse X: '+ event.clientX +', mouse Y: '+event.clientY
+   document.getElementById('mySpan01').style.left = event.clientX  + 10
+   document.getElementById('mySpan01').style.top = event.clientY 
+
+
+   myCheckAll()
+
+}
+
 function myHitOther(my1,my2){
    left1   = parseInt(document.getElementById(my1).style.left)
    right1  = left1 + parseInt(document.getElementById(my1).style.width)
@@ -21,7 +37,7 @@ function myCheckAll(){
   if(myHitOther('mySpan01', 'mySpan02')){
     document.getElementById('mySpan02').style.left = '-400px'
     alert('You Win!')
-    location = 'https://google.ca'
+    location = 'https://www.google.ca/'
   }
 
   if(myHitOther('mySpan01', 'mySpan03')){
@@ -33,45 +49,39 @@ function myCheckAll(){
 }
 
 
+
+ // document.body.style.cursor = 'none'   // crappy to lose your cursor
+
 </script>
 
 
 
 
+
 <body style="background-color: #C0C0C0;">
-<h1 style="color:#cc0000;"align=center>T4A03-win-and-checkAll-logant</h1><br>
+<h1 style="color:#cc0000;"align=center>T4A14-image-drag-logant</h1><br>
 
 
-<input type=button value="Move 10 pixels right" onClick="{
+
+
+
+<input type=button value="????" onClick="{
                         
-  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-  myCheckAll()
-                        
-}">
 
-
-<input type=button value="Move 10 pixels Diagonal" onClick="{
-                        
-  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-  document.getElementById('mySpan01').style.top  = parseInt(document.getElementById('mySpan01').style.top)  - 10
-  myCheckAll()
                         
 }">
 
-
+<div id="myDiv01">...</div>
 
 <span id="mySpan01" style="position:absolute; left:100; top:150; width:45; height:30">
-<img src="TestBall.png" width="50" height="50"></span><br>
-
-<span id="mySpan02" style="position:absolute; left:400; top:150; width:45; height:30">
-<img src="TestHole.png" width="75" height="75"></span><br>
-
-<span id="mySpan03" style="position:absolute; left:200; top:150; width:45; height:30">
-<img src="TestHitbox.png" width="75" height="75"></span><br>
+   Span 1 </span><br>
+<span id="mySpan02" style="position:absolute; left:400; top:150; width:45; height:30"> 
+   Span 2 </span><br>
+<span id="mySpan03" style="position:absolute; left:200; top:150; width:45; height:30"> 
+   Span 3 </span><br>
 
 
 
-
-
+</body>
 
 ​

@@ -41,13 +41,10 @@ function myCheckAll(){
 
 
 <body onKeyUp="{
-
      let myKeyUp = event.key
-
       if (myKeyUp.toLowerCase() == 'x') {   // go down
          document.getElementById('mySpan12').style.left = '-400px'
      }
-
       if (myKeyUp.toLowerCase() == 'w') {   // go down
          document.getElementById('mySpan13').style.left = '-400px'
      }
@@ -60,97 +57,71 @@ function myCheckAll(){
          document.getElementById('mySpan15').style.left = '-400px'
      }
       
-
 }" onKeyDown="{
      let myAlphaKey = event.key
      document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
-
-
       if (myAlphaKey.toLowerCase() == 'arrowright') {
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'd') {   // go right
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-
          document.getElementById('mySpan15').style.left = document.getElementById('mySpan06').style.left
          document.getElementById('mySpan15').style.top = document.getElementById('mySpan06').style.top
-
          myCheckAll()
       }
-
-
       if (myAlphaKey.toLowerCase() == 'arrowleft') {
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'a') {   // go left
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
-
          document.getElementById('mySpan14').style.left = document.getElementById('mySpan07').style.left
          document.getElementById('mySpan14').style.top = document.getElementById('mySpan07').style.top
-
          myCheckAll()
       }
-
-
       if (myAlphaKey.toLowerCase() == 'arrowup') {
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'w') {   // go up
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
          
          document.getElementById('mySpan13').style.left = document.getElementById('mySpan04').style.left
          document.getElementById('mySpan13').style.top = document.getElementById('mySpan04').style.top
-
          myCheckAll()
       }
-
-
       if (myAlphaKey.toLowerCase() == 'arrowdown') {
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'x') {   // go down
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
-
          document.getElementById('mySpan12').style.left = document.getElementById('mySpan05').style.left
          document.getElementById('mySpan12').style.top = document.getElementById('mySpan05').style.top
-
-
          myCheckAll()
       }
-
-
       if (myAlphaKey.toLowerCase() == 'c') {   // go southeast
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'z') {   // go southwest
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'q') {   // go northwest
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
          myCheckAll()
       }
-
       if (myAlphaKey.toLowerCase() == 'e') {   // go northeast
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 10
          myCheckAll()
       }
-}">
+}"
 
 <body style="background-color: #C0C0C0;">
 <h1 style="color:#cc0000;"align=center>T4A04-WASD-logant</h1><br>
